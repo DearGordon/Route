@@ -13,6 +13,7 @@
 		014ED70F25A5BBD70009F31C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 014ED70D25A5BBD70009F31C /* LaunchScreen.storyboard */; };
 		014ED71A25A5BBD70009F31C /* RouteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014ED71925A5BBD70009F31C /* RouteTests.swift */; };
 		014ED72525A5BBD70009F31C /* RouteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014ED72425A5BBD70009F31C /* RouteUITests.swift */; };
+		017434AA25A5C26F0015B8BB /* UIViewExtension-Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017434A925A5C26F0015B8BB /* UIViewExtension-Layout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		014ED72025A5BBD70009F31C /* RouteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RouteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		014ED72425A5BBD70009F31C /* RouteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteUITests.swift; sourceTree = "<group>"; };
 		014ED72625A5BBD70009F31C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		017434A925A5C26F0015B8BB /* UIViewExtension-Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewExtension-Layout.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				014ED70B25A5BBD70009F31C /* Assets.xcassets */,
 				014ED70D25A5BBD70009F31C /* LaunchScreen.storyboard */,
 				014ED71025A5BBD70009F31C /* Info.plist */,
+				017434A925A5C26F0015B8BB /* UIViewExtension-Layout.swift */,
 			);
 			path = Route;
 			sourceTree = "<group>";
@@ -251,6 +254,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				017434AA25A5C26F0015B8BB /* UIViewExtension-Layout.swift in Sources */,
 				014ED70325A5BBD60009F31C /* AppDelegate.swift in Sources */,
 				014ED70525A5BBD60009F31C /* SceneDelegate.swift in Sources */,
 			);
