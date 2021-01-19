@@ -67,7 +67,7 @@ final class TestViewController: UIViewController {
     
     @objc
     private func didTap(stackItem: StackItem) {
-        // TODO: - route
+        NLRoute.shared.route(to: stackItem.url)
     }
 
 }

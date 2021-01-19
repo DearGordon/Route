@@ -10,24 +10,19 @@ import XCTest
 
 class RouteTests: XCTestCase {
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    func testRoute01() {
+        
+        NLRoute.shared.addRoute(pattern: "meet/:date") { para, add in
+            XCTAssertTrue(para.keys.contains("date"), "can't find the key.")
+            XCTAssertTrue(para["date"] == "20210119", "date error.")
+            XCTAssertTrue(add["hi"] as? Int == 1234)
+            XCTAssertTrue(para["lesson"] == "route", "can't got queryItems")
+            return true
         }
+    
+        let url = URL(string: "https://nick:handsome@iOS.Taipei:6666/meet/20210119?lesson=route#agenda")!
+        
+        XCTAssertTrue(NLRoute.shared.route(to: url, addPara: ["hi": 1234]), "no handle.")
     }
 
 }
